@@ -5,7 +5,7 @@ from data_generator import generate_dataset
 import mannwhitneyu
 import waldwolfowitz
 
-import matplotlib
+import matplotlib.pyplot as plt
 import pandas as pd
 import dataframe_image as dfi
 
@@ -19,6 +19,15 @@ X_1 = generate_dataset(stats_1['n'], stats_1['mean'], stats_1['std'])
 X_2 = generate_dataset(stats_2['n'], stats_2['mean'], stats_2['std'])
 
 # data visualization
+plt.figure()
+plt.hist(X_1, density=True, alpha=0.5, bins=30, label='X_1')
+plt.hist(X_2, density=True, alpha=0.5, bins=30, label='X_2')
+plt.title('Data Visualizer')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+plt.legend(loc='upper right')
+plt.savefig(f"test_{configs['test_used']}_datasets.png")
+plt.close()
 
 # process them
 
