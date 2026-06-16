@@ -22,9 +22,9 @@ test_cases = [
     # Test Case 1: Same mean, Same std
     (100, 1000, 100, 100, 1000, 100),
     # Test Case 2: Different (small) mean, Same std
-    (90, 500, 50, 90, 480, 50),
+    (900, 500, 50, 900, 480, 50),
     #  Test Case 3: Same mean, Different (big) std
-    (50, 500, 5, 50, 500, 50),
+    (670, 500, 5, 670, 500, 50),
     # Test Case 4: Large n but small m, Different (small) mean, Different (big) std
     (10000, 500, 50, 7, 480, 5)
 ]

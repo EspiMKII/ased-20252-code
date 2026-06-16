@@ -5,7 +5,7 @@ configs["seed"] = 42
 configs["tolerance"] = 1e-6
 
 # processing & interperation
-configs["test_used"] = 4
+configs["test_used"] = 2
 configs["use_u_formula"] = True
 configs["confidence_level"] = 0.95
 
